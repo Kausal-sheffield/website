@@ -667,6 +667,63 @@ section {
   top: 2px;
 }
 
+/* Services */
+
+#services {
+  background: var(--white);
+  padding: clamp(30px, 5vh, 100px) 0;
+  width: 100%;
+}
+
+#services h2 {
+  text-align: center;
+}
+
+.services-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: clamp(20px, 4vw, 40px);
+  width: min(90%, 1200px);
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.service-card {
+  background: var(--white);
+  padding: clamp(20px, 3vw, 30px);
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.service-card i {
+  font-size: clamp(28px, 4vw, 36px);
+  color: var(--primary-color);
+  margin-bottom: 15px;
+}
+
+.service-card h3 {
+  margin-bottom: 15px;
+  font-size: clamp(20px, 3vw, 24px);
+}
+
+.service-card p {
+  color: var(--text-light);
+  line-height: 1.6;
+  margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .services-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* Team Section */
 #team {
   background-color: var(--white);
