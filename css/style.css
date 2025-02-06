@@ -111,7 +111,7 @@ a:focus {
 
 /* Container */
 .container {
-  width: min(90%, 1400px);
+  width: 90%;
   justify-content: center;
   padding: auto
     /* margin-left: auto;
@@ -125,8 +125,8 @@ a:focus {
 section {
   /* padding: 1rem 0; */
   transition: all 400ms ease;
-  width: 100%;
-  /* margin: 0 auto; */
+  width: 90%;
+  margin: 0 auto;
 
 }
 
@@ -500,7 +500,8 @@ section {
   background: linear-gradient(to bottom, #f5f5f5 0%, var(--white) 100%);
   text-align: center;
   padding: clamp(30px, 5vh, 100px) 0;
-  width: 100%;
+  width: 90%;
+  margin: 0 auto;
 }
 
 #features .features-text {
@@ -607,6 +608,8 @@ section {
   background-color: var(--white);
   text-align: center;
   padding: clamp(30px, 5vh, 100px) 0;
+  width: 90%;
+  margin: 0 auto;
 }
 
 
@@ -672,7 +675,8 @@ section {
 #services {
   background: var(--white);
   padding: clamp(30px, 5vh, 100px) 0;
-  width: 100%;
+  width: 90%;
+  margin: 0 auto;
 }
 
 #services h2 {
@@ -729,7 +733,8 @@ section {
   background-color: var(--white);
   padding: clamp(30px, 5vh, 100px) 0;
   text-align: justify;
-  min-width: 100%;
+  width: 90%;
+  margin: 0 auto;
 }
 
 #team h2 {
@@ -738,18 +743,18 @@ section {
 
 #team .images {
   display: grid;
-  grid-template-columns: 33% 33% 33%;
-  gap: clamp(20px, 4vw, 40px);
-  width: min(100%, 1200px);
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: clamp(15px, 3vw, 30px);
+  width: min(90%, 1200px);
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 10px;
 }
 
 #team .thumbnail {
   text-align: center;
   justify-content: center;
-  align-items: center;
-  display: flex;
+  /* align-items: center; */
+  /* display: flex; */
   flex-direction: column;
   background: transparent;
   border: 0;
@@ -758,12 +763,16 @@ section {
 #team img {
   position: relative;
   display: block;
-  width: 100%;
+  width: min(100%, 300px);
+  /* Increased max size */
   height: auto;
   border-radius: 33%;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  aspect-ratio: 1
+  aspect-ratio: 1;
+  margin: 0 auto;
+  /* Center images */
 }
+
 
 #team img:hover {
   transform: translateY(-5px);
@@ -785,11 +794,11 @@ section {
   }
 
   .industry-card {
-    min-height: 150px;
+    min-height: 300px;
   }
 
   #team img {
-    width: min(80%, 250px);
+    width: min(80%, 300px);
   }
 
   /* .about-text p {
@@ -802,7 +811,7 @@ section {
   #features .icons,
   .industries-grid,
   #team .images {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   }
 }
 
@@ -811,7 +820,7 @@ section {
   background: linear-gradient(to right, var(--primary-color) 0%, var(--primary-color) 100%);
   color: var(--text-dark);
   border-bottom-left-radius: 50px;
-  width: min(90%, 1200px);
+  width: 90%;
   margin: 0 auto;
   padding: clamp(30px, 5vh, 100px) 0;
 }
@@ -844,10 +853,12 @@ section {
   border-radius: 25px;
   padding: 0 20px;
   border: 1px solid #ddd;
-  width: 100%;
+  width: 90%;
   color: #444;
   background-color: var(--white);
 }
+
+
 
 .form-control:focus {
   border-color: #999;
@@ -863,6 +874,7 @@ section {
   color: rgba(255, 255, 255, 1);
   margin-bottom: 10px;
   display: block;
+  width: 90%;
 }
 
 #contact .social {
