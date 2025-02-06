@@ -681,8 +681,8 @@ section {
 
 .services-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: clamp(20px, 4vw, 40px);
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: clamp(15px, 3vw, 30px);
   width: min(90%, 1200px);
   margin: 0 auto;
   padding: 0 15px;
